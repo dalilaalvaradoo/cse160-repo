@@ -1,1 +1,56 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    
+    <p>
+    Reference photo: <img id="referenceImage" src="flower_triangles.jpeg" width="250">
+
+    <p>
+    <button type="button" id="drawPictureButton">Recreate Drawing</button>
+
+    <p>
+    <p id="numdot"> XXX </p>
+
+    <p>
+    <button type="Button" id="green">Green</button>
+    <button type="Button" id="red">Red</button>
+    <button type="Button" id="clearButton">Clear</button>
+
+    <p>
+
+    <button type="Button" id="pointButton">Point</button>
+    <button type="Button" id="triButton">Triangle</button> 
+    <button type="Button" id="circleButton">Circle</button>
+    
+
+    <p>
+    Red <input type="range" min="0" max="100" value="100" class="Slider" id="redSlide">
+    <p>
+    Green <input type="range" min="0" max="100" value="0" class="Slider" id="greenSlide">
+    <p>
+    Blue <input type="range" min="0" max="100" value="0" class="Slider" id="blueSlide">
+
+    <p>
+    Size <input type="range" min="5" max="40" value="0" class="slider" id="sizeSlide">
+
+    <p>
+    Segments <input type="range" min="3" max="40" value="10" class="slider" id="segmentSlide">
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="Triangles.js"></script>
+    <script src="Circle.js"></script> 
+    <script src="points_class.js"></script>
+    <script src="ColoredPoints.js"></script>
+  </body>
+</html>
