@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p>
+    <p id="numdot"> XXX </p>
+
+    <p>
+    Camera Angle
+    <input type="range" min="-180" max="180" value="0" class="slider" id="camAngleSlide"> 
+        
+    Animation:
+    <button type="button" id="animationOnButton">On</button>
+    <button type="button" id="animationOffButton">Off</button>
+    
+    <p>
+    Back Left Upper Leg 
+    <input type="range" min="-40" max="40" value="-25" class="slider" id="backLeftLegSlide">
+    
+    Lower Leg 
+    <input type="range" min="-60" max="80" value="50" class="slider" id="backLeftLowerLegSlide">
+
+    Foot
+    <input type="range" min="-45" max="45" value="0" class="slider" id="backLeftFoot">
+    
+    <p>
+    Front Left Upper Leg 
+    <input type="range" min="-60" max="60" value="-25" class="slider" id="frontLeftLegSlide">
+
+    Lower Leg 
+    <input type="range" min="-60" max="80" value="50" class="slider" id="frontLeftLowerLegSlide">
+
+    <p>
+    Back Right Upper Leg
+    <input type="range" min="-40" max="40" value="-25" class="slider" id="backRightLegSlide">
+    
+    Lower Leg
+    <input type="range" min="-60" max="80" value="50" class="slider" id="backRightLowerLegSlide">
+
+    <p>
+    Front Right Upper Leg 
+    <input type="range" min="-60" max="60" value="-25" class="slider" id="frontRightLegSlide">
+
+    
+    Lower Leg 
+    <input type="range" min="-60" max="80" value="50" class="slider" id="frontRightLowerLegSlide">
+
+    
+    
+    
+    <!--<p>
+    Red <input type="range" min="0" max="100" value="100" class="Slider" id="redSlide">
+    <p>
+    Green <input type="range" min="0" max="100" value="0" class="Slider" id="greenSlide">
+    <p>
+    Blue <input type="range" min="0" max="100" value="0" class="Slider" id="blueSlide">
+
+    <p>
+    Size <input type="range" min="5" max="40" value="0" class="slider" id="sizeSlide">
+
+    <p>
+    Segments <input type="range" min="3" max="40" value="10" class="slider" id="segmentSlide"> -->
+
+    
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+
+    
+    <script src="Circle.js"></script> 
+    <script src="points_class.js"></script>
+    <script src="Triangles.js"></script>
+    <script src="Cube.js"></script>
+    <script src="BlockyAnimals.js"></script>
+  </body>
+</html>
